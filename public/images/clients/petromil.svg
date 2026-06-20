@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 650 190" role="img" aria-labelledby="title">
+  <title id="title">Petromil</title>
+  <rect width="650" height="190" fill="none"/>
+  <text x="24" y="112" font-family="Arial Black, Arial, Helvetica, sans-serif" font-size="70" font-style="italic" font-weight="900" fill="#1765a8">PETR</text>
+  <text x="356" y="112" font-family="Arial Black, Arial, Helvetica, sans-serif" font-size="70" font-style="italic" font-weight="900" fill="#1765a8">MIL</text>
+  <path d="M332 36 C365 68 374 105 348 127 C324 148 286 130 296 99 C301 84 318 72 322 55 C325 47 326 40 332 36 Z" fill="#13aee5"/>
+  <path d="M330 92 C349 112 342 135 319 138 C301 140 289 126 295 110 C300 99 314 96 320 83 C324 88 326 90 330 92 Z" fill="#ffd13d"/>
+</svg>

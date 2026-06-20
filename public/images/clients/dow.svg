@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 220" role="img" aria-labelledby="title">
+  <title id="title">Dow</title>
+  <polygon points="260,18 508,110 260,202 12,110" fill="#ef1f2d"/>
+  <text x="159" y="138" font-family="Georgia, Times New Roman, serif" font-size="88" font-weight="700" fill="#ffffff">Dow</text>
+  <text x="405" y="154" font-family="Arial, Helvetica, sans-serif" font-size="28" font-weight="700" fill="#ef1f2d">®</text>
+</svg>

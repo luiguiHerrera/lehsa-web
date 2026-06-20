@@ -20,7 +20,7 @@ export const metadata: Metadata = {
     template: "%s | LEHSA",
   },
   description:
-    "Suministro, mantenimiento, montaje y soporte tecnico en proteccion contra incendios, control de derrames, equipos de proceso y seguridad industrial.",
+    "Suministro, mantenimiento, montaje y soporte técnico en protección contra incendios, control de derrames, equipos de proceso y seguridad industrial.",
 };
 
 export default function RootLayout({

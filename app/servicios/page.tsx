@@ -8,7 +8,7 @@ import { company } from "@/lib/company";
 export const metadata: Metadata = {
   title: "Servicios",
   description:
-    "Suministro tecnico, mantenimiento, montaje y soporte tecnico para operaciones industriales.",
+    "Suministro técnico, mantenimiento, montaje y soporte técnico para operaciones industriales.",
 };
 
 export default function ServiciosPage() {
@@ -16,13 +16,13 @@ export default function ServiciosPage() {
     <>
       <PageHero
         eyebrow="Servicios"
-        title="Soporte tecnico antes, durante y despues del suministro."
-        description="LEHSA no se limita a entregar productos: acompana decisiones tecnicas donde la seguridad no se improvisa."
+        title="Acompañamiento antes, durante y después del suministro."
+        description="LEHSA no se limita a entregar productos: acompaña decisiones técnicas donde la seguridad no se improvisa."
       />
       <Section
-        title="Como apoyamos tu operacion"
+        title="Cómo apoyamos tu operación"
         description="Respuesta directa para empresas que necesitan claridad, continuidad y soluciones para entornos industriales exigentes."
-        className="bg-white"
+        className="bg-slate-50"
       >
         <CardGrid items={company.services} columns="two" />
       </Section>

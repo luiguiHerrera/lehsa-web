@@ -8,7 +8,7 @@ import { company } from "@/lib/company";
 export const metadata: Metadata = {
   title: "Soluciones industriales",
   description:
-    "Proteccion contra incendios, control de derrames, equipos de proceso y seguridad industrial para empresas del Caribe colombiano.",
+    "Protección contra incendios, control de derrames, equipos de proceso y seguridad industrial para empresas del Caribe colombiano.",
 };
 
 export default function SolucionesPage() {
@@ -16,13 +16,13 @@ export default function SolucionesPage() {
     <>
       <PageHero
         eyebrow="Soluciones"
-        title="Suministros y sistemas para proteger operaciones criticas."
-        description="Acompanamos la seleccion de soluciones para proteccion contra incendios, control de derrames, equipos de proceso y seguridad industrial."
+        title="Catálogo técnico por líneas industriales."
+        description="Acompañamos la selección de soluciones para protección contra incendios, control de derrames, equipos de proceso y seguridad industrial."
       />
       <Section
-        title="Lineas principales"
-        description="Cada requerimiento se revisa con criterio tecnico para validar especificaciones, compatibilidad y aplicacion en campo."
-        className="bg-slate-50"
+        title="Líneas principales"
+        description="Cada requerimiento se revisa con criterio técnico para validar especificaciones, compatibilidad y aplicación en campo."
+        className="bg-slate-100"
       >
         <CardGrid items={company.solutions} columns="two" />
       </Section>

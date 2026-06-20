@@ -6,7 +6,7 @@ import { company } from "@/lib/company";
 export const metadata: Metadata = {
   title: "Contacto",
   description:
-    "Contacto directo con LEHSA por WhatsApp, llamada o correo electronico.",
+    "Contacto directo con LEHSA por WhatsApp, llamada o correo electrónico.",
 };
 
 export default function ContactoPage() {
@@ -14,31 +14,32 @@ export default function ContactoPage() {
     <>
       <PageHero
         eyebrow="Contacto"
-        title="Respuesta directa para tu requerimiento tecnico."
-        description="Escribenos, llama o envia un correo. No usamos formularios: el contacto con LEHSA es directo."
+        title="Canales directos para tu requerimiento técnico."
+        description="Escríbenos, llama o envía un correo. No usamos formularios: el contacto con LEHSA es directo."
         showActions
       />
-      <section className="bg-slate-50 px-5 py-18 sm:py-24 lg:px-8">
+      <section className="bg-slate-50 px-5 py-16 sm:py-20 lg:px-8 lg:py-24">
         <div className="mx-auto grid max-w-7xl gap-8 lg:grid-cols-[0.85fr_1.15fr]">
           <div>
-            <p className="text-sm font-bold uppercase text-red-600">
-              Canales
+            <p className="flex items-center gap-3 text-sm font-bold uppercase text-red-600">
+              <span className="h-px w-10 bg-red-600" />
+              <span>Canales</span>
             </p>
             <h2 className="mt-3 text-3xl font-bold text-slate-950 sm:text-4xl">
               Hablemos antes de definir la compra.
             </h2>
             <p className="mt-5 text-lg leading-8 text-slate-600">
-              Comparte tu necesidad, aplicacion, cantidades o dudas tecnicas.
+              Comparte tu necesidad, aplicación, cantidades o dudas técnicas.
               Te orientamos con lenguaje claro y criterios prudentes.
             </p>
           </div>
 
-          <div className="rounded-sm border border-slate-200 bg-white p-6 shadow-sm">
+          <div className="min-w-0 rounded-sm border border-slate-200 bg-white p-5 shadow-[0_24px_70px_rgba(15,23,42,0.12)] sm:p-6">
             <ContactActions variant="light" />
             <div className="mt-8 grid gap-5 sm:grid-cols-2">
               <div className="border-l-4 border-red-600 bg-slate-50 p-5">
                 <p className="text-sm font-semibold uppercase text-slate-500">
-                  Telefono y WhatsApp
+                  Teléfono y WhatsApp
                 </p>
                 <p className="mt-3 text-xl font-bold text-slate-950">
                   {company.contact.phoneLabel}

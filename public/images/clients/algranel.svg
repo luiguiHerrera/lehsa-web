@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 240" role="img" aria-labelledby="title">
+  <title id="title">Algranel</title>
+  <rect width="700" height="240" fill="none"/>
+  <path d="M112 14 C74 60 28 117 26 172 C24 211 56 232 103 232 C151 232 184 211 181 170 C178 117 144 64 112 14 Z" fill="#10a64b"/>
+  <path d="M112 14 C82 51 47 102 35 150 C77 132 126 118 171 116 C158 78 134 41 112 14 Z" fill="#8ac64a" opacity=".85"/>
+  <text x="62" y="184" font-family="Arial Black, Arial, Helvetica, sans-serif" font-size="86" font-weight="900" fill="#ffffff">G</text>
+  <text x="285" y="158" font-family="Georgia, Times New Roman, serif" font-size="82" font-weight="700" fill="#10a64b">Algranel</text>
+</svg>
