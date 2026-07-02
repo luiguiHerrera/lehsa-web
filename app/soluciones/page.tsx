@@ -8,7 +8,7 @@ import { company } from "@/lib/company";
 export const metadata: Metadata = {
   title: "Soluciones industriales",
   description:
-    "Protección contra incendios, control de derrames, equipos de proceso y seguridad industrial para empresas del Caribe colombiano.",
+    "Suministros para protección contra incendios, control de derrames, equipos de proceso y seguridad industrial.",
 };
 
 export default function SolucionesPage() {
@@ -16,8 +16,8 @@ export default function SolucionesPage() {
     <>
       <PageHero
         eyebrow="Soluciones"
-        title="Catálogo técnico por líneas industriales."
-        description="Acompañamos la selección de soluciones para protección contra incendios, control de derrames, equipos de proceso y seguridad industrial."
+        title="Catálogo técnico de suministros industriales."
+        description="Acompañamos la selección de productos para protección contra incendios, control de derrames, equipos de proceso y seguridad industrial."
       />
       <Section
         title="Líneas principales"
@@ -25,6 +25,14 @@ export default function SolucionesPage() {
         className="bg-slate-100"
       >
         <CardGrid items={company.solutions} columns="two" />
+      </Section>
+      <Section
+        eyebrow="Productos clave"
+        title="Suministros con mayor visibilidad comercial."
+        description="Estas líneas concentran el mensaje público actual de LEHSA como proveedor industrial especializado con acompañamiento técnico."
+        className="bg-white"
+      >
+        <CardGrid items={company.keyProducts} />
       </Section>
       <CtaBand />
     </>

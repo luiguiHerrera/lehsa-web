@@ -30,7 +30,8 @@ export default function ContactoPage() {
             </h2>
             <p className="mt-5 text-lg leading-8 text-slate-600">
               Comparte tu necesidad, aplicación, cantidades o dudas técnicas.
-              Te orientamos con lenguaje claro y criterios prudentes.
+              Te orientamos sobre opciones de suministro con lenguaje claro y
+              criterios prudentes.
             </p>
           </div>
 
@@ -65,8 +66,8 @@ export default function ContactoPage() {
                 <p className="text-sm font-semibold uppercase text-slate-500">
                   Cobertura
                 </p>
-                <p className="mt-3 text-xl font-bold text-slate-950">
-                  Caribe colombiano
+                <p className="mt-3 text-base font-bold leading-7 text-slate-950">
+                  {company.coverage.join(", ")}
                 </p>
               </div>
             </div>

@@ -42,7 +42,8 @@ export default function Home() {
               <div className="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-950/15 to-transparent" />
               <div className="absolute inset-x-0 bottom-0 p-5 sm:p-6">
                 <p className="max-w-md text-lg font-bold leading-7 text-white">
-                  Protección, proceso y seguridad para operaciones industriales.
+                  Productos especializados para protección, proceso y seguridad
+                  industrial.
                 </p>
               </div>
             </div>
@@ -58,7 +59,7 @@ export default function Home() {
               <div className="rounded-sm border border-red-500/50 bg-red-600 p-5 text-white shadow-xl shadow-red-950/20">
                 <p className="text-sm font-semibold uppercase">Cobertura</p>
                 <p className="mt-2 text-sm leading-6">
-                  Cartagena, Barranquilla, Santa Marta y Caribe colombiano.
+                  {company.coverage.join(", ")}.
                 </p>
               </div>
             </div>
@@ -68,11 +69,20 @@ export default function Home() {
 
       <Section
         eyebrow="Soluciones"
-        title="Equipos, sistemas y soporte para operaciones industriales."
-        description="LEHSA acompaña la selección de suministros y soluciones para seguridad, proceso y continuidad operacional, con criterio técnico desde la primera conversación."
+        title="Suministros industriales especializados para operaciones exigentes."
+        description="LEHSA acompaña la selección de productos para seguridad, proceso y continuidad operacional, con criterio técnico desde la primera conversación."
         className="bg-slate-50"
       >
         <CardGrid items={company.solutions} columns="two" />
+      </Section>
+
+      <Section
+        eyebrow="Productos clave"
+        title="Líneas que nuestros clientes nos piden con frecuencia."
+        description="Priorizamos suministros industriales que resuelven necesidades concretas en plantas, terminales, puertos y operaciones de proceso."
+        className="bg-white"
+      >
+        <CardGrid items={company.keyProducts} />
       </Section>
 
       <section className="bg-slate-950 px-5 py-16 text-white sm:py-20 lg:px-8 lg:py-24">
@@ -89,9 +99,9 @@ export default function Home() {
           <div className="relative rounded-sm border border-white/12 bg-white/[0.06] p-6 shadow-[0_25px_70px_rgba(0,0,0,0.25)]">
             <span className="absolute left-0 top-6 h-16 w-1 bg-red-600" />
             <p className="text-lg leading-8 text-slate-200">
-              Acompañamos requerimientos técnicos y normativos con una mirada
-              práctica: entender la necesidad, validar especificaciones y
-              orientar la solución que mejor se ajusta a la operación.
+              Acompañamos requerimientos técnicos con una mirada práctica:
+              entender la necesidad, validar especificaciones y orientar el
+              suministro que mejor se ajusta a la operación.
             </p>
           </div>
         </div>
@@ -113,7 +123,7 @@ export default function Home() {
             <p className="mt-5 text-lg leading-8 text-slate-600">
               Esa conversación temprana permite validar especificaciones,
               revisar riesgos de aplicación y orientar una compra más clara. En
-              LEHSA la venta comienza con entender la operación.
+              LEHSA el suministro comienza con entender la operación.
             </p>
           </div>
           <div className="grid gap-5 sm:grid-cols-2">
@@ -153,7 +163,7 @@ export default function Home() {
                 <span>Experiencia</span>
               </p>
               <h2 className="mt-3 text-3xl font-bold sm:text-4xl">
-                Referencias industriales del Caribe colombiano.
+                Referencias industriales y portuarias.
               </h2>
             </div>
             <div className="grid grid-cols-2 gap-3 sm:grid-cols-4">

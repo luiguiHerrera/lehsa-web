@@ -6,22 +6,22 @@ import { Section } from "@/components/section";
 import { company } from "@/lib/company";
 
 export const metadata: Metadata = {
-  title: "Servicios",
+  title: "Acompañamiento técnico",
   description:
-    "Suministro técnico, mantenimiento, montaje y soporte técnico para operaciones industriales.",
+    "Soporte en la selección de suministros industriales especializados para operaciones industriales.",
 };
 
 export default function ServiciosPage() {
   return (
     <>
       <PageHero
-        eyebrow="Servicios"
-        title="Acompañamiento antes, durante y después del suministro."
-        description="LEHSA no se limita a entregar productos: acompaña decisiones técnicas donde la seguridad no se improvisa."
+        eyebrow="Acompañamiento técnico"
+        title="Soporte en la selección de suministros industriales."
+        description="LEHSA acompaña la compra técnica de productos especializados: entendemos la necesidad, revisamos especificaciones y orientamos alternativas de suministro."
       />
       <Section
-        title="Cómo apoyamos tu operación"
-        description="Respuesta directa para empresas que necesitan claridad, continuidad y soluciones para entornos industriales exigentes."
+        title="Cómo orientamos la selección"
+        description="El foco público actual es el suministro. Nuestro acompañamiento ayuda a elegir con más claridad, sin presentar un portafolio abierto de servicios."
         className="bg-slate-50"
       >
         <CardGrid items={company.services} columns="two" />

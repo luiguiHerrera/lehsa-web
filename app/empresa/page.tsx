@@ -7,7 +7,7 @@ import { company } from "@/lib/company";
 export const metadata: Metadata = {
   title: "Empresa",
   description:
-    "LEHSA Suministros Industriales S.A.S., aliado técnico industrial en Cartagena y el Caribe colombiano.",
+    "LEHSA Suministros Industriales S.A.S., aliado técnico en suministros industriales especializados.",
 };
 
 export default function EmpresaPage() {
@@ -16,11 +16,11 @@ export default function EmpresaPage() {
       <PageHero
         eyebrow="Empresa"
         title="Más que proveedores, somos tu aliado técnico."
-        description="Desde Cartagena, LEHSA acompaña empresas industriales del Caribe colombiano con suministro, mantenimiento, montaje y soporte técnico."
+        description="Desde Cartagena, LEHSA acompaña empresas industriales con suministro especializado y orientación técnica para elegir mejor."
       />
       <Section
         title="Una forma de trabajar basada en criterio técnico."
-        description="Durante 16 años, LEHSA ha construido relaciones B2B alrededor de la respuesta directa, la orientación previa y el acompañamiento en decisiones donde la seguridad y la continuidad operacional importan."
+        description="Durante 12 años, LEHSA ha construido relaciones B2B alrededor de la respuesta directa, la orientación previa y el acompañamiento en decisiones de suministro donde la seguridad y la continuidad operacional importan."
         className="bg-slate-50"
       >
         <div className="grid gap-5 md:grid-cols-3">
@@ -45,7 +45,7 @@ export default function EmpresaPage() {
               <span>Cobertura</span>
             </p>
             <h2 className="mt-3 text-3xl font-bold sm:text-4xl">
-              Presencia comercial en Cartagena y el Caribe colombiano.
+              Presencia comercial en ciudades industriales y portuarias.
             </h2>
             <p className="mt-5 text-slate-300">
               Sin promesas innecesarias: respuesta directa en horario de oficina

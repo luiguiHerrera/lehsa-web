@@ -16,12 +16,12 @@ export default function SectoresPage() {
     <>
       <PageHero
         eyebrow="Sectores"
-        title="Experiencia en operaciones B2B del Caribe colombiano."
-        description="Atendemos empresas que operan en ambientes exigentes y requieren suministros confiables, mantenimiento y acompañamiento técnico."
+        title="Experiencia en operaciones B2B industriales."
+        description="Atendemos empresas que operan en ambientes exigentes y requieren suministros confiables con acompañamiento técnico."
       />
       <Section
         title="Industrias que acompañamos"
-        description="LEHSA trabaja con requerimientos técnicos y normativos propios de operaciones industriales, portuarias y de proceso."
+        description="LEHSA trabaja con requerimientos técnicos propios de operaciones industriales, portuarias y de proceso."
         className="bg-slate-100"
       >
         <CardGrid items={company.sectors} />
