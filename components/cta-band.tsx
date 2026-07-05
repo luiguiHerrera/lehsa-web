@@ -15,8 +15,8 @@ export function CtaBand() {
             Conversemos antes de comprar.
           </h2>
           <p className="mt-4 max-w-2xl text-slate-300">
-            Revisamos tu necesidad, aclaramos especificaciones y orientamos la
-            alternativa que mejor encaja con tu operación.
+            El contacto es directo: escríbenos por WhatsApp, llámanos o
+            envíanos tu requerimiento por correo.
           </p>
         </div>
         <ContactActions />

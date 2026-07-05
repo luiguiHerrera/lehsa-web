@@ -1,15 +1,16 @@
 export const company = {
-  name: "LEHSA Suministros Industriales S.A.S.",
+  name: "LEHSA Ingeniería y Suministros S.A.S.",
+  legalName: "LEHSA Suministros Industriales S.A.S.",
   shortName: "LEHSA",
+  descriptor: "Ingeniería y Suministros S.A.S.",
   location: "Cartagena, Colombia",
   experience: "12 años de experiencia",
-  tagline:
-    "Suministros industriales especializados con acompañamiento técnico.",
+  tagline: "Suministros industriales especializados con criterio técnico.",
   subtagline:
-    "Seleccionamos y suministramos productos para protección contra incendios, control de derrames, equipos de proceso y seguridad industrial, con orientación técnica para empresas industriales.",
+    "Seleccionamos y suministramos productos especializados para protección contra incendios, control de derrames, equipos de proceso y seguridad industrial, orientando técnicamente a empresas con operaciones exigentes.",
   differentiators: [
-    "Más que proveedores, somos tu aliado técnico.",
-    "Nos llaman incluso antes de comprar. Y allí es donde agregamos más valor.",
+    "Suministros con criterio técnico para decisiones industriales más claras.",
+    "Nos llaman incluso antes de comprar.",
     "Acompañamos decisiones de suministro donde la seguridad no se improvisa.",
   ],
   contact: {
@@ -30,64 +31,38 @@ export const company = {
     "Yumbo",
     "Buenaventura",
     "San Andrés Isla",
-    "Caribe colombiano",
   ],
+  coverageText:
+    "Cobertura principal en Cartagena, Barranquilla y Santa Marta. Atención según requerimiento en Bogotá, Yumbo, Buenaventura, San Andrés Isla y otras zonas del país.",
   clients: [
-    {
-      name: "Puerto Bahía",
-      logo: "/images/clients/puerto-bahia.svg",
-    },
-    {
-      name: "Algranel",
-      logo: "/images/clients/algranel.svg",
-    },
-    {
-      name: "Oiltanking",
-      logo: "/images/clients/oiltanking.svg",
-    },
-    {
-      name: "Corteva",
-      logo: "/images/clients/corteva.svg",
-    },
-    {
-      name: "Sociedad Portuaria del Dique",
-      logo: "/images/clients/sociedad-portuaria-del-dique.svg",
-    },
-    {
-      name: "Zona Franca de Cartagena",
-      logo: "/images/clients/zona-franca-cartagena.svg",
-    },
-    {
-      name: "Zona Franca Parque Central",
-      logo: "/images/clients/zona-franca-parque-central.svg",
-    },
-    {
-      name: "Palermo Tanks",
-      logo: "/images/clients/palermo-tanks.svg",
-    },
-    {
-      name: "Codis",
-      logo: "/images/clients/codis.svg",
-    },
+    { name: "Puerto Bahía" },
+    { name: "Algranel" },
+    { name: "Oiltanking" },
+    { name: "Corteva" },
+    { name: "Sociedad Portuaria del Dique" },
+    { name: "Zona Franca de Cartagena" },
+    { name: "Zona Franca Parque Central" },
+    { name: "Palermo Tanks" },
+    { name: "Codis" },
   ],
   keyProducts: [
     {
-      title: "Mangaveletas",
+      title: "Mangaveletas y repuestos",
       description:
-        "Suministro para señalización de dirección del viento en plantas, terminales y zonas expuestas.",
+        "Suministro para señalización de dirección del viento y reposición de componentes en plantas, terminales y zonas expuestas.",
     },
     {
-      title: "Forros de protección",
+      title: "Forros de protección para activos",
       description:
-        "Protección para equipos, tuberías y componentes que requieren barreras adicionales frente al entorno operativo.",
+        "Forros para canecas, cubitanques, equipos y componentes que requieren barreras adicionales frente al entorno operativo.",
     },
     {
-      title: "Productos para control de derrames",
+      title: "Kits y productos para control de derrames",
       description:
         "Kits, absorbentes, barreras, bandejas y consumibles para apoyar la contención en campo.",
     },
     {
-      title: "Extintores",
+      title: "Extintores y accesorios",
       description:
         "Equipos y accesorios para respuesta inicial contra incendios en instalaciones industriales y comerciales.",
     },
@@ -106,6 +81,26 @@ export const company = {
       description:
         "Elementos para protección personal, señalización, respuesta y operación segura.",
     },
+    {
+      title: "Overoles ignífugos",
+      description:
+        "Prendas de protección para entornos con exposición térmica o requerimientos especiales de seguridad industrial.",
+    },
+    {
+      title: "Bloqueo y etiquetado",
+      description:
+        "Elementos para apoyar prácticas de control, identificación y aislamiento de energías según requerimiento.",
+    },
+    {
+      title: "Chalecos salvavidas",
+      description:
+        "Elementos de seguridad para operaciones cercanas a cuerpos de agua, puertos y actividades con exposición marítima o fluvial.",
+    },
+    {
+      title: "Linternas y botiquines",
+      description:
+        "Suministros de apoyo para seguridad, respuesta y operación diaria en entornos industriales.",
+    },
   ],
   solutions: [
     {
@@ -114,7 +109,7 @@ export const company = {
         "Suministro especializado de equipos, sistemas y componentes para protección contra incendios.",
       items: [
         "Extintores y gabinetes contra incendio",
-        "Mangueras, válvulas y accesorios",
+        "Válvulas, accesorios y repuestos según requerimiento",
         "Sistemas de extinción y detección",
         "Bombas contra incendio y equipos asociados",
         "Señalización y equipos complementarios",
@@ -138,7 +133,7 @@ export const company = {
       items: [
         "Bombas y accesorios de proceso",
         "Válvulas e instrumentación básica",
-        "Mangueras industriales",
+        "Accesorios y repuestos industriales según requerimiento",
         "Componentes para operación industrial",
       ],
     },
@@ -159,32 +154,44 @@ export const company = {
         "Elementos y equipos para reforzar prácticas seguras en plantas, terminales, puertos y operaciones técnicas.",
       items: [
         "Equipos de protección personal",
+        "Overoles ignífugos",
         "Duchas y lavaojos",
-        "Bloqueo, etiquetado y demarcación",
+        "Bloqueo y etiquetado",
+        "Demarcación y señalización",
         "Elementos para respuesta operativa",
       ],
     },
   ],
   services: [
     {
-      title: "Lectura del requerimiento",
+      title: "Revisión del requerimiento",
       description:
         "Revisamos la necesidad, la aplicación y las condiciones de uso antes de orientar una compra.",
     },
     {
-      title: "Selección de suministros",
+      title: "Validación de especificaciones",
       description:
-        "Comparamos alternativas disponibles y validamos especificaciones para el producto requerido.",
+        "Apoyamos la revisión de medidas, materiales, capacidades, accesorios y condiciones de aplicación.",
     },
     {
-      title: "Compatibilidad técnica",
+      title: "Alternativas según aplicación",
       description:
-        "Acompañamos dudas sobre materiales, capacidades, accesorios y condiciones de aplicación.",
+        "Comparamos opciones disponibles para que el suministro responda mejor al uso previsto.",
     },
     {
-      title: "Compra mejor orientada",
+      title: "Selección de productos adecuados",
       description:
-        "Entregamos una ruta de suministro más clara para que el equipo interno pueda decidir con mejor información.",
+        "Orientamos la elección de productos especializados con información clara y criterios prudentes.",
+    },
+    {
+      title: "Coordinación del suministro",
+      description:
+        "Cuando el requerimiento lo exige, orientamos la coordinación técnica asociada al suministro.",
+    },
+    {
+      title: "Acompañamiento antes de comprar",
+      description:
+        "Muchas empresas contactan a LEHSA antes de comprar para validar especificaciones y evitar compras inadecuadas.",
     },
   ],
   sectors: [
@@ -224,7 +231,7 @@ export const company = {
 export const navItems = [
   { label: "Inicio", href: "/" },
   { label: "Soluciones", href: "/soluciones" },
-  { label: "Acompañamiento", href: "/servicios" },
+  { label: "Acompañamiento", href: "/acompanamiento" },
   { label: "Sectores", href: "/sectores" },
   { label: "Empresa", href: "/empresa" },
   { label: "Contacto", href: "/contacto" },

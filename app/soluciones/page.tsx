@@ -6,7 +6,7 @@ import { Section } from "@/components/section";
 import { company } from "@/lib/company";
 
 export const metadata: Metadata = {
-  title: "Soluciones industriales",
+  title: "Soluciones de suministro",
   description:
     "Suministros para protección contra incendios, control de derrames, equipos de proceso y seguridad industrial.",
 };
@@ -16,8 +16,8 @@ export default function SolucionesPage() {
     <>
       <PageHero
         eyebrow="Soluciones"
-        title="Catálogo técnico de suministros industriales."
-        description="Acompañamos la selección de productos para protección contra incendios, control de derrames, equipos de proceso y seguridad industrial."
+        title="Soluciones de suministro para operaciones industriales exigentes."
+        description="Seleccionamos y suministramos productos especializados para protección contra incendios, control de derrames, equipos de proceso y seguridad industrial."
       />
       <Section
         title="Líneas principales"
@@ -28,8 +28,8 @@ export default function SolucionesPage() {
       </Section>
       <Section
         eyebrow="Productos clave"
-        title="Suministros con mayor visibilidad comercial."
-        description="Estas líneas concentran el mensaje público actual de LEHSA como proveedor industrial especializado con acompañamiento técnico."
+        title="Líneas que nuestros clientes nos piden con frecuencia."
+        description="Estas líneas concentran el mensaje público actual de LEHSA como proveedor industrial especializado con criterio técnico."
         className="bg-white"
       >
         <CardGrid items={company.keyProducts} />

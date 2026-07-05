@@ -19,11 +19,11 @@ export function PageHero({
       <div className="absolute right-0 top-0 hidden h-full w-1/3 bg-red-600/10 lg:block" />
       <div className="absolute inset-x-0 bottom-0 h-1 bg-red-600" />
       <div className="relative mx-auto max-w-7xl">
-        <p className="flex items-center gap-3 text-sm font-bold uppercase text-red-400">
-          <span className="h-px w-10 bg-red-500" />
-          <span>{eyebrow}</span>
+        <p className="flex min-w-0 items-start gap-3 text-sm font-bold uppercase text-red-400">
+          <span className="mt-2 h-px w-10 shrink-0 bg-red-500" />
+          <span className="min-w-0">{eyebrow}</span>
         </p>
-        <h1 className="mt-4 max-w-4xl text-4xl font-black leading-tight sm:text-5xl lg:text-6xl">
+        <h1 className="mt-4 max-w-4xl break-words text-3xl font-black leading-tight sm:text-5xl lg:text-6xl">
           {title}
         </h1>
         <p className="mt-6 max-w-3xl text-lg leading-8 text-slate-300">

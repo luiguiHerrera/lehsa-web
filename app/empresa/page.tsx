@@ -7,7 +7,7 @@ import { company } from "@/lib/company";
 export const metadata: Metadata = {
   title: "Empresa",
   description:
-    "LEHSA Suministros Industriales S.A.S., aliado técnico en suministros industriales especializados.",
+    "LEHSA Ingeniería y Suministros S.A.S., proveedor de suministros industriales especializados con criterio técnico.",
 };
 
 export default function EmpresaPage() {
@@ -15,12 +15,12 @@ export default function EmpresaPage() {
     <>
       <PageHero
         eyebrow="Empresa"
-        title="Más que proveedores, somos tu aliado técnico."
-        description="Desde Cartagena, LEHSA acompaña empresas industriales con suministro especializado y orientación técnica para elegir mejor."
+        title="Suministros con criterio técnico para operaciones industriales."
+        description="Desde Cartagena, LEHSA orienta a empresas industriales en la selección de productos especializados asociados a seguridad, proceso y continuidad operacional."
       />
       <Section
         title="Una forma de trabajar basada en criterio técnico."
-        description="Durante 12 años, LEHSA ha construido relaciones B2B alrededor de la respuesta directa, la orientación previa y el acompañamiento en decisiones de suministro donde la seguridad y la continuidad operacional importan."
+        description="Durante 12 años, LEHSA ha construido relaciones B2B alrededor de la respuesta directa, la orientación previa y decisiones de suministro donde la seguridad y la continuidad operacional importan."
         className="bg-slate-50"
       >
         <div className="grid gap-5 md:grid-cols-3">
@@ -48,8 +48,7 @@ export default function EmpresaPage() {
               Presencia comercial en ciudades industriales y portuarias.
             </h2>
             <p className="mt-5 text-slate-300">
-              Sin promesas innecesarias: respuesta directa en horario de oficina
-              para revisar requerimientos y coordinar la mejor ruta técnica.
+              {company.coverageText}
             </p>
           </div>
           <div className="grid gap-3 sm:grid-cols-2">

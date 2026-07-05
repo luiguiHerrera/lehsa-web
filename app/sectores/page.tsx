@@ -8,7 +8,7 @@ import { company } from "@/lib/company";
 export const metadata: Metadata = {
   title: "Sectores",
   description:
-    "Soluciones industriales para terminales, energía, puertos, químico, oil and gas y manufactura.",
+    "Suministros industriales para terminales, energía, puertos, químico, oil and gas y manufactura.",
 };
 
 export default function SectoresPage() {
@@ -17,11 +17,11 @@ export default function SectoresPage() {
       <PageHero
         eyebrow="Sectores"
         title="Experiencia en operaciones B2B industriales."
-        description="Atendemos empresas que operan en ambientes exigentes y requieren suministros confiables con acompañamiento técnico."
+        description="Atendemos empresas que operan en ambientes exigentes y requieren suministros especializados con criterio técnico."
       />
       <Section
         title="Industrias que acompañamos"
-        description="LEHSA trabaja con requerimientos técnicos propios de operaciones industriales, portuarias y de proceso."
+        description="LEHSA trabaja con requerimientos de suministro propios de operaciones industriales, portuarias y de proceso."
         className="bg-slate-100"
       >
         <CardGrid items={company.sectors} />

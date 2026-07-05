@@ -5,11 +5,12 @@ import "./globals.css";
 
 export const metadata: Metadata = {
   title: {
-    default: "LEHSA Suministros Industriales S.A.S.",
+    default:
+      "LEHSA Ingeniería y Suministros S.A.S. | Suministros industriales especializados",
     template: "%s | LEHSA",
   },
   description:
-    "Suministros industriales especializados con acompañamiento técnico en protección contra incendios, control de derrames, equipos de proceso y seguridad industrial.",
+    "Suministros industriales especializados para protección contra incendios, control de derrames, equipos de proceso y seguridad industrial en Cartagena y el Caribe colombiano.",
 };
 
 export default function RootLayout({

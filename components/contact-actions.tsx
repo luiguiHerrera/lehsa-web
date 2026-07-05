@@ -8,7 +8,7 @@ export function ContactActions({ variant = "primary" }: ContactActionsProps) {
   const base =
     "inline-flex min-h-11 items-center justify-center gap-2 rounded-sm px-4 py-2 text-sm font-semibold transition focus:outline-none focus:ring-2 focus:ring-red-500 focus:ring-offset-2";
   const headerBase =
-    "inline-flex min-h-10 items-center justify-center rounded-sm px-3 py-2 text-xs font-semibold transition focus:outline-none focus:ring-2 focus:ring-red-500 focus:ring-offset-2";
+    "inline-flex min-h-10 min-w-0 items-center justify-center rounded-sm px-3 py-2 text-xs font-semibold transition focus:outline-none focus:ring-2 focus:ring-red-500 focus:ring-offset-2";
   const secondary =
     variant === "light"
       ? "border border-slate-300 text-slate-900 hover:border-red-600 hover:text-red-700"
@@ -23,7 +23,7 @@ export function ContactActions({ variant = "primary" }: ContactActionsProps) {
     <div
       className={
         isHeader
-          ? "grid grid-cols-3 gap-2"
+          ? "grid min-w-0 grid-cols-1 gap-2 sm:grid-cols-3"
           : "flex w-full flex-col gap-3 sm:w-auto sm:flex-row sm:flex-wrap"
       }
     >

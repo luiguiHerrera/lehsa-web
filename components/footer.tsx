@@ -18,7 +18,7 @@ export function Footer() {
 
         <div>
           <p className="text-sm font-semibold uppercase text-slate-400">
-            Navegacion
+            Navegación
           </p>
           <div className="mt-4 grid gap-2 text-sm">
             {navItems.map((item) => (

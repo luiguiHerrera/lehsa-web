@@ -8,17 +8,17 @@ import { company } from "@/lib/company";
 export default function Home() {
   return (
     <>
-      <section className="relative overflow-hidden bg-slate-950 px-5 py-16 text-white sm:py-24 lg:px-8 lg:py-28">
+      <section className="relative overflow-hidden bg-slate-950 px-5 py-14 text-white sm:py-20 lg:px-8 lg:py-24">
         <div className="absolute inset-0 opacity-25 [background-image:linear-gradient(90deg,rgba(255,255,255,.08)_1px,transparent_1px),linear-gradient(rgba(255,255,255,.07)_1px,transparent_1px)] [background-size:76px_76px]" />
         <div className="absolute right-0 top-0 hidden h-full w-1/2 bg-red-600/10 lg:block" />
         <div className="absolute inset-x-0 bottom-0 h-1 bg-red-600" />
         <div className="relative mx-auto grid max-w-7xl gap-12 lg:grid-cols-[1.05fr_0.95fr] lg:items-center">
-          <div>
-            <p className="flex items-center gap-3 text-sm font-bold uppercase text-red-400">
-              <span className="h-px w-10 bg-red-500" />
-              <span>{company.location} · {company.experience}</span>
+          <div className="min-w-0">
+            <p className="flex min-w-0 items-start gap-3 text-sm font-bold uppercase text-red-400">
+              <span className="mt-2 h-px w-10 shrink-0 bg-red-500" />
+              <span className="min-w-0">{company.location} · {company.experience}</span>
             </p>
-            <h1 className="mt-5 max-w-5xl text-4xl font-black leading-tight sm:text-5xl lg:text-6xl">
+            <h1 className="mt-5 max-w-5xl break-words text-3xl font-black leading-tight sm:text-5xl lg:text-6xl">
               {company.tagline}
             </h1>
             <p className="mt-6 max-w-3xl text-lg leading-8 text-slate-300">
@@ -50,7 +50,7 @@ export default function Home() {
             <div className="mt-4 grid gap-3 sm:grid-cols-2">
               <div className="rounded-sm border border-white/15 bg-white/[0.07] p-5 backdrop-blur">
                 <p className="text-sm font-semibold uppercase text-red-300">
-                  Aliado técnico
+                  Criterio técnico
                 </p>
                 <p className="mt-2 text-sm leading-6 text-slate-200">
                   Orientación antes de comprar para validar especificaciones.
@@ -59,7 +59,7 @@ export default function Home() {
               <div className="rounded-sm border border-red-500/50 bg-red-600 p-5 text-white shadow-xl shadow-red-950/20">
                 <p className="text-sm font-semibold uppercase">Cobertura</p>
                 <p className="mt-2 text-sm leading-6">
-                  {company.coverage.join(", ")}.
+                  {company.coverageText}
                 </p>
               </div>
             </div>
@@ -70,7 +70,7 @@ export default function Home() {
       <Section
         eyebrow="Soluciones"
         title="Suministros industriales especializados para operaciones exigentes."
-        description="LEHSA acompaña la selección de productos para seguridad, proceso y continuidad operacional, con criterio técnico desde la primera conversación."
+        description="LEHSA orienta la selección de productos para seguridad, proceso y continuidad operacional, con criterio técnico desde la primera conversación."
         className="bg-slate-50"
       >
         <CardGrid items={company.solutions} columns="two" />
@@ -90,18 +90,18 @@ export default function Home() {
           <div>
             <p className="flex items-center gap-3 text-sm font-bold uppercase text-red-400">
               <span className="h-px w-10 bg-red-500" />
-              <span>Más que proveedores</span>
+              <span>Suministro con criterio</span>
             </p>
             <h2 className="mt-3 text-3xl font-bold leading-tight sm:text-4xl">
-              Somos tu aliado técnico en decisiones industriales.
+              Acompañamiento técnico asociado al suministro.
             </h2>
           </div>
           <div className="relative rounded-sm border border-white/12 bg-white/[0.06] p-6 shadow-[0_25px_70px_rgba(0,0,0,0.25)]">
             <span className="absolute left-0 top-6 h-16 w-1 bg-red-600" />
             <p className="text-lg leading-8 text-slate-200">
-              Acompañamos requerimientos técnicos con una mirada práctica:
-              entender la necesidad, validar especificaciones y orientar el
-              suministro que mejor se ajusta a la operación.
+              Entendemos la necesidad, apoyamos la validación de
+              especificaciones y orientamos la selección del suministro que
+              mejor se ajusta a la operación.
             </p>
           </div>
         </div>
@@ -121,9 +121,9 @@ export default function Home() {
               Y allí es donde agregamos más valor.
             </p>
             <p className="mt-5 text-lg leading-8 text-slate-600">
-              Esa conversación temprana permite validar especificaciones,
-              revisar riesgos de aplicación y orientar una compra más clara. En
-              LEHSA el suministro comienza con entender la operación.
+              Muchas empresas contactan a LEHSA antes de comprar para validar
+              especificaciones, comparar alternativas y evitar compras
+              inadecuadas en productos críticos para su operación.
             </p>
           </div>
           <div className="grid gap-5 sm:grid-cols-2">
@@ -169,16 +169,12 @@ export default function Home() {
             <div className="grid grid-cols-2 gap-3 sm:grid-cols-4">
               {company.clients.map((client) => (
                 <div
-                  className="grid min-h-24 place-items-center rounded-sm border border-white/12 bg-white px-4 py-5 shadow-xl shadow-black/10 transition hover:-translate-y-1 hover:border-red-500/50 sm:min-h-28"
+                  className="grid min-h-24 place-items-center rounded-sm border border-white/12 bg-white/[0.06] px-4 py-5 text-center shadow-xl shadow-black/10 transition hover:-translate-y-1 hover:border-red-500/50 sm:min-h-28"
                   key={client.name}
                 >
-                  <Image
-                    src={client.logo}
-                    alt={`Logo de ${client.name}`}
-                    width={220}
-                    height={90}
-                    className="max-h-16 w-full max-w-[170px] object-contain sm:max-h-20"
-                  />
+                  <p className="text-sm font-bold leading-6 text-white sm:text-base">
+                    {client.name}
+                  </p>
                 </div>
               ))}
             </div>

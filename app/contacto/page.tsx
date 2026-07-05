@@ -14,8 +14,8 @@ export default function ContactoPage() {
     <>
       <PageHero
         eyebrow="Contacto"
-        title="Canales directos para tu requerimiento técnico."
-        description="Escríbenos, llama o envía un correo. No usamos formularios: el contacto con LEHSA es directo."
+        title="Canales directos para tu requerimiento."
+        description="El contacto es directo: escríbenos por WhatsApp, llámanos o envíanos tu requerimiento por correo."
         showActions
       />
       <section className="bg-slate-50 px-5 py-16 sm:py-20 lg:px-8 lg:py-24">
@@ -29,9 +29,9 @@ export default function ContactoPage() {
               Hablemos antes de definir la compra.
             </h2>
             <p className="mt-5 text-lg leading-8 text-slate-600">
-              Comparte tu necesidad, aplicación, cantidades o dudas técnicas.
+              Comparte tu necesidad, aplicación, cantidades o especificaciones.
               Te orientamos sobre opciones de suministro con lenguaje claro y
-              criterios prudentes.
+              criterio técnico.
             </p>
           </div>
 
@@ -67,7 +67,7 @@ export default function ContactoPage() {
                   Cobertura
                 </p>
                 <p className="mt-3 text-base font-bold leading-7 text-slate-950">
-                  {company.coverage.join(", ")}
+                  {company.coverageText}
                 </p>
               </div>
             </div>
