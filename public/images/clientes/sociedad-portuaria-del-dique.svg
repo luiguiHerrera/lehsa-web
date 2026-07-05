@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 240" role="img" aria-labelledby="title">
+  <title id="title">Sociedad Portuaria del Dique</title>
+  <rect width="760" height="240" rx="18" fill="#ffffff"/>
+  <text x="380" y="105" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="44" font-weight="800" fill="#1f2937">Sociedad Portuaria</text>
+  <text x="380" y="158" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="44" font-weight="800" fill="#1f2937">del Dique</text>
+  <path d="M255 177 H505" stroke="#d8232a" stroke-width="9" stroke-linecap="square"/>
+</svg>

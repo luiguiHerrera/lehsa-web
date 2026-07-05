@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 170" role="img" aria-labelledby="title">
+  <title id="title">Puerto Bahía</title>
+  <rect width="520" height="170" fill="none"/>
+  <path d="M214 35 C254 20 302 13 346 19" fill="none" stroke="#c9222b" stroke-width="10"/>
+  <path d="M304 44 C344 24 391 14 430 18" fill="none" stroke="#1768ad" stroke-width="10"/>
+  <text x="0" y="120" font-family="Arial Black, Arial, Helvetica, sans-serif" font-size="56" font-weight="900" fill="#31363a">Puerto Bahía</text>
+</svg>

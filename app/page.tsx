@@ -165,16 +165,30 @@ export default function Home() {
               <h2 className="mt-3 text-3xl font-bold sm:text-4xl">
                 Referencias industriales y portuarias.
               </h2>
+              <p className="mt-4 text-sm leading-7 text-slate-300">
+                Algunas empresas y operaciones industriales que han confiado en
+                la experiencia de LEHSA.
+              </p>
             </div>
-            <div className="grid grid-cols-2 gap-3 sm:grid-cols-4">
+            <div className="grid grid-cols-1 gap-3 sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-4">
               {company.clients.map((client) => (
                 <div
-                  className="grid min-h-24 place-items-center rounded-sm border border-white/12 bg-white/[0.06] px-4 py-5 text-center shadow-xl shadow-black/10 transition hover:-translate-y-1 hover:border-red-500/50 sm:min-h-28"
+                  className="grid min-h-28 place-items-center rounded-sm border border-white/15 bg-white px-5 py-5 text-center shadow-xl shadow-black/10 transition hover:-translate-y-1 hover:border-red-500/50"
                   key={client.name}
                 >
-                  <p className="text-sm font-bold leading-6 text-white sm:text-base">
-                    {client.name}
-                  </p>
+                  {client.logo ? (
+                    <Image
+                      src={client.logo}
+                      alt={client.alt || `Logo de ${client.name}`}
+                      width={220}
+                      height={96}
+                      className="max-h-16 w-full max-w-44 object-contain"
+                    />
+                  ) : (
+                    <p className="text-sm font-bold leading-6 text-slate-900 sm:text-base">
+                      {client.name}
+                    </p>
+                  )}
                 </div>
               ))}
             </div>
