@@ -173,19 +173,20 @@ export default function Home() {
             <div className="grid grid-cols-1 gap-3 sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-4">
               {company.clients.map((client) => (
                 <div
-                  className="grid min-h-28 place-items-center rounded-sm border border-white/15 bg-white px-5 py-5 text-center shadow-xl shadow-black/10 transition hover:-translate-y-1 hover:border-red-500/50"
+                  className="flex min-h-[92px] items-center justify-center rounded-sm border border-white/10 bg-white/[0.03] px-6 text-center shadow-xl shadow-black/10 transition hover:-translate-y-1 hover:border-red-500/40 hover:bg-white/[0.06] sm:h-24"
                   key={client.name}
                 >
-                  {client.logo ? (
-                    <Image
+                  {client.useLogo && client.logo ? (
+                    // eslint-disable-next-line @next/next/no-img-element
+                    <img
                       src={client.logo}
                       alt={client.alt || `Logo de ${client.name}`}
-                      width={220}
-                      height={96}
-                      className="max-h-16 w-full max-w-44 object-contain"
+                      className={`w-full object-contain ${
+                        client.logoClassName ?? "max-h-12 max-w-[82%]"
+                      }`}
                     />
                   ) : (
-                    <p className="text-sm font-bold leading-6 text-slate-900 sm:text-base">
+                    <p className="text-center text-lg font-semibold leading-6 tracking-tight text-slate-100 sm:text-xl">
                       {client.name}
                     </p>
                   )}
