@@ -5,13 +5,37 @@ export const company = {
   descriptor: "Ingeniería y Suministros S.A.S.",
   location: "Cartagena, Colombia",
   experience: "12 años de experiencia",
-  tagline: "Suministros industriales especializados con criterio técnico.",
+  tagline: "Suministros industriales especializados para operaciones críticas.",
   subtagline:
-    "Seleccionamos y suministramos productos especializados para protección contra incendios, control de derrames, equipos de proceso y seguridad industrial, orientando técnicamente a empresas con operaciones exigentes.",
+    "LEHSA Ingeniería y Suministros S.A.S. acompaña a empresas industriales, portuarias y de proceso en la selección y suministro de productos para seguridad industrial, protección contra incendios, control de derrames y continuidad operativa.",
   differentiators: [
-    "Suministros con criterio técnico para decisiones industriales más claras.",
-    "Nos llaman incluso antes de comprar.",
-    "Acompañamos decisiones de suministro donde la seguridad no se improvisa.",
+    "Relación directa con el cliente.",
+    "Conocimiento de entornos industriales y portuarios.",
+    "Portafolio especializado.",
+    "Orientación antes de la compra.",
+    "Experiencia en Cartagena y el Caribe colombiano.",
+  ],
+  helpingResolve: [
+    {
+      title: "Preparación ante emergencias",
+      description:
+        "Productos para protección contra incendios, control de derrames y respuesta inicial.",
+    },
+    {
+      title: "Continuidad operativa",
+      description:
+        "Reposición de productos, accesorios y componentes para mantener áreas y equipos disponibles.",
+    },
+    {
+      title: "Selección técnica de suministros",
+      description:
+        "Validación de especificaciones, aplicación y alternativas antes de comprar.",
+    },
+    {
+      title: "Abastecimiento para entornos exigentes",
+      description:
+        "Productos para plantas, terminales, puertos, zonas francas e industrias de proceso.",
+    },
   ],
   contact: {
     phoneLabel: "+57 321 278 9908",
@@ -22,6 +46,11 @@ export const company = {
     emailHref:
       "mailto:lehsasuministros@gmail.com?subject=Solicitud%20de%20orientaci%C3%B3n%20t%C3%A9cnica%20para%20suministro%20industrial",
     hours: "Horario de oficina",
+  },
+  brochure: {
+    label: "Descargar brochure institucional",
+    footerLabel: "Brochure institucional",
+    href: "/reports/brochure-institucional-lehsa-2026.pdf",
   },
   coverage: [
     "Cartagena",
@@ -188,6 +217,12 @@ export const company = {
       title: "Extinción y detección contra incendios",
       summary:
         "Suministro especializado de equipos, sistemas y componentes para protección contra incendios.",
+      image: {
+        src: "/images/site/solution-fire-protection.png",
+        alt: "Sistema de protección contra incendios en una instalación industrial",
+        width: 1448,
+        height: 1086,
+      },
       items: [
         "Extintores y gabinetes contra incendio",
         "Válvulas, accesorios y repuestos según requerimiento",
@@ -200,6 +235,12 @@ export const company = {
       title: "Control de derrames",
       summary:
         "Productos para contención, absorción y respuesta ante eventos operativos con sustancias o fluidos.",
+      image: {
+        src: "/images/site/solution-spill-control.png",
+        alt: "Elementos para control de derrames en entorno industrial",
+        width: 1448,
+        height: 1086,
+      },
       items: [
         "Kits antiderrames",
         "Barreras y absorbentes",
@@ -211,6 +252,12 @@ export const company = {
       title: "Bombas y equipos de proceso",
       summary:
         "Suministro y acompañamiento técnico para equipos y componentes usados en procesos industriales.",
+      image: {
+        src: "/images/site/solution-process-equipment.png",
+        alt: "Bomba y tuberías de proceso en una planta industrial",
+        width: 1448,
+        height: 1086,
+      },
       items: [
         "Bombas y accesorios de proceso",
         "Válvulas e instrumentación básica",
@@ -222,6 +269,12 @@ export const company = {
       title: "Mangaveletas y forros de protección",
       summary:
         "Productos especializados para señalización, protección de activos y operación en ambientes industriales.",
+      image: {
+        src: "/images/site/solution-protective-covers.png",
+        alt: "Forros de protección para equipos y activos industriales",
+        width: 1448,
+        height: 1086,
+      },
       items: [
         "Mangaveletas para zonas operativas",
         "Forros de protección para equipos y componentes",
@@ -233,6 +286,12 @@ export const company = {
       title: "Seguridad industrial",
       summary:
         "Elementos y equipos para reforzar prácticas seguras en plantas, terminales, puertos y operaciones técnicas.",
+      image: {
+        src: "/images/site/solution-industrial-safety.png",
+        alt: "Elementos de seguridad industrial y protección personal",
+        width: 1448,
+        height: 1086,
+      },
       items: [
         "Equipos de protección personal",
         "Overoles ignífugos",
@@ -245,66 +304,106 @@ export const company = {
   ],
   services: [
     {
-      title: "Revisión del requerimiento",
+      title: "Nos cuentas la necesidad",
       description:
-        "Revisamos la necesidad, la aplicación y las condiciones de uso antes de orientar una compra.",
+        "Producto, cantidad, aplicación, ciudad, urgencia o referencia disponible.",
     },
     {
-      title: "Validación de especificaciones",
+      title: "Revisamos el contexto",
       description:
-        "Apoyamos la revisión de medidas, materiales, capacidades, accesorios y condiciones de aplicación.",
+        "Validamos medidas, materiales, compatibilidad, uso esperado o condiciones de operación.",
     },
     {
-      title: "Alternativas según aplicación",
+      title: "Te orientamos con claridad",
       description:
-        "Comparamos opciones disponibles para que el suministro responda mejor al uso previsto.",
+        "Si hay varias alternativas, explicamos cuál puede ajustarse mejor y por qué.",
     },
     {
-      title: "Selección de productos adecuados",
+      title: "Coordinamos la cotización",
       description:
-        "Orientamos la elección de productos especializados con información clara y criterios prudentes.",
-    },
-    {
-      title: "Coordinación del suministro",
-      description:
-        "Cuando el requerimiento lo exige, orientamos la coordinación técnica asociada al suministro.",
-    },
-    {
-      title: "Acompañamiento antes de comprar",
-      description:
-        "Muchas empresas contactan a LEHSA antes de comprar para validar especificaciones y evitar compras inadecuadas.",
+        "Revisamos disponibilidad, tiempos y condiciones comerciales.",
     },
   ],
   sectors: [
     {
-      title: "Terminales y almacenamiento",
+      title: "Puertos, terminales y zonas francas",
       description:
-        "Suministros para operaciones con exigencias de seguridad, continuidad y control de riesgos.",
+        "Suministros para operación, seguridad, señalización, respuesta inicial y continuidad.",
     },
     {
-      title: "Energía y generación",
+      title: "Industria, manufactura y procesos",
       description:
-        "Soluciones para equipos, áreas críticas y procesos que requieren respuesta técnica precisa.",
+        "Productos especializados para áreas operativas, equipos, protección y requerimientos recurrentes.",
     },
     {
-      title: "Puertos y logística",
+      title: "Energía, almacenamiento y combustibles",
       description:
-        "Suministros y acompañamiento para operaciones expuestas a movimiento, clima y exigencias de disponibilidad.",
+        "Suministros asociados a seguridad industrial, control de derrames, protección y operación.",
     },
     {
-      title: "Químico e industrial",
+      title: "Químicos, agroindustria y materiales",
       description:
-        "Equipos y materiales para ambientes productivos donde la seguridad no se improvisa.",
+        "Elementos para contención, protección, respuesta y manejo seguro del entorno operativo.",
     },
     {
-      title: "Oil & gas",
+      title: "Operaciones con requerimientos especiales",
       description:
-        "Suministros para protección, contención y operación en manejo de fluidos.",
+        "Cuando el cliente no tiene claro el producto exacto, LEHSA ayuda a revisar la necesidad y orientar la selección.",
+    },
+  ],
+  quoteChecklist: [
+    "Producto requerido",
+    "Cantidad aproximada",
+    "Ciudad o lugar de entrega",
+    "Aplicación o uso esperado",
+    "Fotos, ficha técnica o referencia si la tienes",
+    "Urgencia del requerimiento",
+  ],
+  productGroups: [
+    {
+      title: "Alta recurrencia",
+      summary:
+        "Suministros que suelen pedirse para reposición, disponibilidad operativa o necesidades frecuentes.",
+      items: [
+        "Mangaveletas y repuestos",
+        "Forros de protección para activos",
+        "Kits y productos para control de derrames",
+        "Extintores y accesorios",
+      ],
     },
     {
-      title: "Manufactura",
-      description:
-        "Elementos de seguridad industrial, proceso y respuesta para plantas con necesidades operativas constantes.",
+      title: "Operación y proceso",
+      summary:
+        "Equipos, componentes y accesorios asociados a áreas de proceso y operación industrial.",
+      items: [
+        "Bombas y equipos de proceso",
+        "Válvulas e instrumentación básica",
+        "Accesorios y repuestos industriales según requerimiento",
+        "Componentes para operación industrial",
+      ],
+    },
+    {
+      title: "Seguridad industrial",
+      summary:
+        "Elementos para protección, señalización, control de energías y trabajo seguro en campo.",
+      items: [
+        "Equipos de protección personal",
+        "Overoles ignífugos",
+        "Bloqueo y etiquetado",
+        "Chalecos salvavidas",
+        "Demarcación y señalización",
+      ],
+    },
+    {
+      title: "Protección y respuesta",
+      summary:
+        "Productos para preparación, respuesta inicial y control de eventos operativos.",
+      items: [
+        "Sistemas de extinción y detección",
+        "Duchas y lavaojos",
+        "Barreras, absorbentes y bandejas",
+        "Linternas y botiquines",
+      ],
     },
   ],
 };

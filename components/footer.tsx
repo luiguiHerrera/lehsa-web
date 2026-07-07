@@ -30,6 +30,14 @@ export function Footer() {
                 {item.label}
               </Link>
             ))}
+            <a
+              className="text-slate-300 transition hover:text-white"
+              href={company.brochure.href}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              {company.brochure.footerLabel}
+            </a>
           </div>
         </div>
 

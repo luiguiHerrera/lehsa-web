@@ -16,34 +16,44 @@ export default function Home() {
           <div className="min-w-0">
             <p className="flex min-w-0 items-start gap-3 text-sm font-bold uppercase text-red-400">
               <span className="mt-2 h-px w-10 shrink-0 bg-red-500" />
-              <span className="min-w-0">{company.location} · {company.experience}</span>
+              <span className="min-w-0 max-w-[15rem] break-words sm:max-w-none">
+                {company.location} · {company.experience}
+              </span>
             </p>
             <h1 className="mt-5 max-w-5xl break-words text-3xl font-black leading-tight sm:text-5xl lg:text-6xl">
               {company.tagline}
             </h1>
-            <p className="mt-6 max-w-3xl text-lg leading-8 text-slate-300">
+            <p className="mt-6 max-w-[20rem] break-words text-lg leading-8 text-slate-300 sm:max-w-3xl">
               {company.subtagline}
             </p>
             <div className="mt-8">
               <ContactActions />
+              <a
+                className="mt-3 inline-flex min-h-11 w-full items-center justify-center rounded-sm border border-white/20 px-4 py-2 text-sm font-semibold text-white transition hover:border-red-400 hover:text-red-100 focus:outline-none focus:ring-2 focus:ring-red-500 focus:ring-offset-2 sm:w-auto"
+                href={company.brochure.href}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                {company.brochure.label}
+              </a>
             </div>
           </div>
 
           <div className="relative">
             <div className="relative overflow-hidden rounded-sm border border-white/15 bg-slate-900 shadow-[0_30px_90px_rgba(0,0,0,0.45)]">
               <Image
-                src="/images/lehsa-industrial-hero.png"
-                alt="Equipos industriales y elementos de protección contra incendios"
+                src="/images/site/hero-industrial-main.png"
+                alt="Instalación industrial con equipos de protección contra incendios y proceso"
                 width={1774}
                 height={887}
                 priority
                 className="aspect-[4/3] w-full object-cover sm:aspect-[16/10] lg:aspect-[4/3]"
+                sizes="(min-width: 1024px) 46vw, 100vw"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-950/15 to-transparent" />
               <div className="absolute inset-x-0 bottom-0 p-5 sm:p-6">
                 <p className="max-w-md text-lg font-bold leading-7 text-white">
-                  Productos especializados para protección, proceso y seguridad
-                  industrial.
+                  Criterio técnico antes de comprar.
                 </p>
               </div>
             </div>
@@ -53,7 +63,8 @@ export default function Home() {
                   Criterio técnico
                 </p>
                 <p className="mt-2 text-sm leading-6 text-slate-200">
-                  Orientación antes de comprar para validar especificaciones.
+                  Antes de cotizar, revisamos aplicación, compatibilidad y uso
+                  esperado.
                 </p>
               </div>
               <div className="rounded-sm border border-red-500/50 bg-red-600 p-5 text-white shadow-xl shadow-red-950/20">
@@ -68,12 +79,12 @@ export default function Home() {
       </section>
 
       <Section
-        eyebrow="Soluciones"
-        title="Suministros industriales especializados para operaciones exigentes."
-        description="LEHSA orienta la selección de productos para seguridad, proceso y continuidad operacional, con criterio técnico desde la primera conversación."
+        eyebrow="Qué ayudamos a resolver"
+        title="Apoyo práctico para decisiones de suministro que no conviene improvisar."
+        description="Acompañamos requerimientos donde la seguridad, la disponibilidad y la continuidad operativa dependen de escoger bien desde el inicio."
         className="bg-slate-50"
       >
-        <CardGrid items={company.solutions} columns="two" />
+        <CardGrid items={company.helpingResolve} columns="two" />
       </Section>
 
       <Section
@@ -93,15 +104,17 @@ export default function Home() {
               <span>Suministro con criterio</span>
             </p>
             <h2 className="mt-3 text-3xl font-bold leading-tight sm:text-4xl">
-              Acompañamiento técnico asociado al suministro.
+              Cuéntanos qué necesitas y lo revisamos contigo.
             </h2>
           </div>
           <div className="relative rounded-sm border border-white/12 bg-white/[0.06] p-6 shadow-[0_25px_70px_rgba(0,0,0,0.25)]">
             <span className="absolute left-0 top-6 h-16 w-1 bg-red-600" />
             <p className="text-lg leading-8 text-slate-200">
-              Entendemos la necesidad, apoyamos la validación de
-              especificaciones y orientamos la selección del suministro que
-              mejor se ajusta a la operación.
+              A veces el cliente ya sabe exactamente qué producto necesita.
+              Otras veces tiene una referencia, una foto, una ficha técnica
+              incompleta o simplemente una necesidad operativa. En LEHSA
+              revisamos el caso, hacemos las preguntas necesarias y orientamos
+              la selección del suministro adecuado.
             </p>
           </div>
         </div>
@@ -121,9 +134,9 @@ export default function Home() {
               Y allí es donde agregamos más valor.
             </p>
             <p className="mt-5 text-lg leading-8 text-slate-600">
-              Muchas empresas contactan a LEHSA antes de comprar para validar
-              especificaciones, comparar alternativas y evitar compras
-              inadecuadas en productos críticos para su operación.
+              Muchas empresas contactan a LEHSA antes de comprar porque
+              necesitan una revisión directa: confirmar medidas, entender la
+              aplicación, comparar alternativas y avanzar con más claridad.
             </p>
           </div>
           <div className="grid gap-5 sm:grid-cols-2">
@@ -146,8 +159,8 @@ export default function Home() {
 
       <Section
         eyebrow="Sectores"
-        title="Soluciones para entornos industriales exigentes."
-        description="Atendemos operaciones B2B donde la seguridad, la disponibilidad y la respuesta directa son parte del trabajo diario."
+        title="Entornos donde LEHSA aporta valor."
+        description="Atendemos operaciones B2B que requieren suministros especializados, comunicación directa y revisión técnica antes de tomar una decisión."
         className="bg-slate-100"
       >
         <CardGrid items={company.sectors} />

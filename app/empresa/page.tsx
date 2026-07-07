@@ -7,7 +7,7 @@ import { company } from "@/lib/company";
 export const metadata: Metadata = {
   title: "Empresa",
   description:
-    "LEHSA Ingeniería y Suministros S.A.S., proveedor de suministros industriales especializados con criterio técnico.",
+    "LEHSA Ingeniería y Suministros S.A.S., empresa colombiana de suministro especializado para operaciones industriales, portuarias y de proceso.",
 };
 
 export default function EmpresaPage() {
@@ -15,18 +15,51 @@ export default function EmpresaPage() {
     <>
       <PageHero
         eyebrow="Empresa"
-        title="Suministros con criterio técnico para operaciones industriales."
-        description="Desde Cartagena, LEHSA orienta a empresas industriales en la selección de productos especializados asociados a seguridad, proceso y continuidad operacional."
+        title="Una empresa de suministro técnico especializada en entornos industriales."
+        description="LEHSA Ingeniería y Suministros S.A.S. trabaja con empresas industriales, portuarias y de proceso que necesitan comprar con claridad, disponibilidad y criterio técnico."
       />
       <Section
-        title="Una forma de trabajar basada en criterio técnico."
-        description="Durante 12 años, LEHSA ha construido relaciones B2B alrededor de la respuesta directa, la orientación previa y decisiones de suministro donde la seguridad y la continuidad operacional importan."
+        eyebrow="Quiénes somos"
+        title="12 años acompañando decisiones de suministro industrial."
+        description="LEHSA Ingeniería y Suministros S.A.S. es una empresa colombiana con 12 años de experiencia en el suministro especializado para empresas industriales, portuarias y de proceso."
         className="bg-slate-50"
       >
-        <div className="grid gap-5 md:grid-cols-3">
+        <div className="grid gap-5 lg:grid-cols-[0.9fr_1.1fr]">
+          <div className="rounded-sm border border-slate-200 bg-white p-6 shadow-[0_16px_45px_rgba(15,23,42,0.08)]">
+            <span className="mb-5 block h-1 w-12 bg-red-600" />
+            <h3 className="text-xl font-bold text-slate-950">
+              Nuestra forma de trabajar
+            </h3>
+            <p className="mt-4 text-base leading-8 text-slate-600">
+              Trabajamos con contacto directo, revisión del requerimiento y
+              criterio técnico para apoyar decisiones de suministro donde la
+              seguridad, la disponibilidad y la continuidad operativa importan.
+            </p>
+          </div>
+          <div className="rounded-sm border border-slate-200 bg-white p-6 shadow-[0_16px_45px_rgba(15,23,42,0.08)]">
+            <span className="mb-5 block h-1 w-12 bg-red-600" />
+            <h3 className="text-xl font-bold text-slate-950">
+              Origen de LEHSA
+            </h3>
+            <p className="mt-4 text-base leading-8 text-slate-600">
+              LEHSA nace y crece desde Cartagena, una ciudad donde la actividad
+              industrial, portuaria y logística exige respuestas concretas. Esa
+              cercanía con el entorno ha formado una manera de trabajar
+              práctica, directa y cuidadosa con cada requerimiento.
+            </p>
+          </div>
+        </div>
+      </Section>
+      <Section
+        eyebrow="Qué nos diferencia"
+        title="Cercanía comercial con criterio técnico."
+        description="Nuestro valor está en conocer el entorno, responder de forma directa y ayudar al cliente a comprar mejor."
+        className="bg-white"
+      >
+        <div className="grid gap-5 md:grid-cols-2 xl:grid-cols-3">
           {company.differentiators.map((text) => (
             <div
-              className="rounded-sm border border-slate-200 bg-white p-6 shadow-[0_16px_45px_rgba(15,23,42,0.08)]"
+              className="rounded-sm border border-slate-200 bg-slate-50 p-6 shadow-[0_16px_45px_rgba(15,23,42,0.06)]"
               key={text}
             >
               <span className="mb-5 block h-1 w-12 bg-red-600" />

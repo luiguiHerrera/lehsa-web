@@ -20,14 +20,16 @@ export function Section({
           {eyebrow ? (
             <p className="flex items-center gap-3 text-sm font-bold uppercase text-red-600">
               <span className="h-px w-10 bg-red-600" />
-              <span>{eyebrow}</span>
+              <span className="min-w-0 max-w-[15rem] break-words sm:max-w-none">
+                {eyebrow}
+              </span>
             </p>
           ) : null}
           <h2 className="mt-3 text-3xl font-bold leading-tight text-slate-950 sm:text-4xl">
             {title}
           </h2>
           {description ? (
-            <p className="mt-4 text-lg leading-8 text-slate-600">
+            <p className="mt-4 max-w-[20rem] break-words text-lg leading-8 text-slate-600 sm:max-w-3xl">
               {description}
             </p>
           ) : null}
